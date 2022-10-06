@@ -1,0 +1,21 @@
+{
+  "language": "ENG",
+  "welcome": "Welcome back!",
+  "text": "Login to your existing account of Q Allure",
+  "email": "Email",
+  "password": "Password",
+  "forgot": "Forgot Password?",
+  "login":"LOG IN",
+  "text1": "Or connect using",
+  "dont": "Don't have an account?",
+  "signup": "Sign Up",
+
+  "lets": "Let's Get Started!",
+  "text2": "Create an account to Q Allure to get all features",
+  "name": "Name",
+  "phone": "Phone",
+  "confirm":"Confirm Password",
+  "create": "CREATE",
+  "text3": "Already have an account?",
+  "loginhere": "Login here"
+}
