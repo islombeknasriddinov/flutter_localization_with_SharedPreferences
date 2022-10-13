@@ -1,12 +1,12 @@
-class User{
+class Users{
   String? id;
   String? email;
   String? password;
 
-  User(this.id, this.email, this.password);
-  User.from(this.email, this.password);
+  Users(this.id, this.email, this.password);
+  Users.from(this.email, this.password);
 
-  User.fromJson(Map<String, dynamic> json)
+  Users.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         email = json['email'],
         password = json['password'];

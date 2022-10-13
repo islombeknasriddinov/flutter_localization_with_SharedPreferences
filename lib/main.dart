@@ -1,14 +1,15 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/pages/home_page.dart';
 import 'package:flutter_localization/pages/login_page.dart';
-import 'package:flutter_localization/pages/sharePfr_page.dart';
-import 'package:flutter_localization/pages/signUp_page.dart';
+import 'package:flutter_localization/pages/signup_page.dart';
 import 'package:toast/toast.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
+  await Firebase.initializeApp();
 
   runApp(
     EasyLocalization(
@@ -38,7 +39,6 @@ class MyApp extends StatelessWidget {
       home: LoginPage(),
       routes: {
         HomePage.id: (context) => HomePage(),
-        SharedPrfr.id: (context) => SharedPrfr(),
         SignUpPage.id: (context) => SignUpPage(),
         LoginPage.id: (context) => LoginPage(),
       },

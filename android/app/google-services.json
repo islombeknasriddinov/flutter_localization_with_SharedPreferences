@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219889589352",
+    "project_id": "fluttersettingfb",
+    "storage_bucket": "fluttersettingfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219889589352:android:5f7307976d162748b26fdd",
+        "android_client_info": {
+          "package_name": "com.example.flutter_localization"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219889589352-o3qr0uae76vsvukopllgb1u1rgsgfsbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7NB57fz1r48MiT2AOk7zhJO9Iyhec8o4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219889589352-o3qr0uae76vsvukopllgb1u1rgsgfsbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
