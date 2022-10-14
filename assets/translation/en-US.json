@@ -17,5 +17,8 @@
   "confirm":"Confirm Password",
   "create": "CREATE",
   "text3": "Already have an account?",
-  "loginhere": "Login here"
+  "loginhere": "Login here",
+
+  "title": "Title",
+  "content": "Content"
 }

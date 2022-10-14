@@ -54,7 +54,7 @@ class _DetailPageState extends State<DetailPage> {
             ),
             controller: titleController,
             decoration: InputDecoration(
-                hintText: "Title",
+                hintText: 'title'.tr(),
                 hintStyle: TextStyle(color: Colors.grey[400]),
                 border: InputBorder.none
             ),
@@ -73,7 +73,7 @@ class _DetailPageState extends State<DetailPage> {
                   maxLines: null,
                   controller: contentController,
                   decoration: InputDecoration(
-                      hintText: "Content",
+                      hintText: 'content'.tr(),
                       hintStyle: TextStyle(color: Colors.grey[400]),
                       border: InputBorder.none
                   ),
