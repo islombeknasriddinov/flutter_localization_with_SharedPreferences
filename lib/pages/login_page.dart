@@ -256,32 +256,24 @@ class _LoginPageState extends State<LoginPage> {
     String email = emailController.text.toString().trim();
     String password = passwordController.text.toString().trim();
     Users users = Users.from(email, password);
-
+    Prefs.storeUser(users, "user");
 
     setState(() {
       isloading = true;
     });
 
     AuthService.signInUser(context, email, password).then((user) => {
-      _getFirebaseUser(user!, users)
-    });
-
-    Prefs.loadUser("user").then((user) => {
-      if(user!.email!.isNotEmpty
-          && user.password!.isNotEmpty){
-        Utils.showToast("Your $email, $password saved")
-      }
+      _getFirebaseUser(user!),
     });
   }
 
 
-  _getFirebaseUser(User user, Users users) async{
+  _getFirebaseUser(User user) async{
     setState(() {
       isloading = false;
     });
     if(user != null){
       await Prefs.saveUSerId(user.uid);
-      Prefs.storeUser(users, "user");
       Navigator.pushReplacementNamed(context, HomePage.id);
     }else{
       Utils.showToast("Check your email or password");
